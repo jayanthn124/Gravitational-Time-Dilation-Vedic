@@ -96,7 +96,7 @@ print(f" Mass / Radius - Ratio for Sun's G-Field on Earth is = {mass_per_radius:
 # Calculate the M/R ratio for Satya-loka and it's STAR:
 # Time Relation between Brahma and Manushya 1 sec of Brahma is 3.1104e12 seconds for humans.
 delta_t_brahma = 1 # in secs (This is similar to delta_t_prime)
-delta_t = time_dilated_earth * 3.1104e12 # in secs
+delta_t = 3.1104e12 # in secs. This is including the effect of Sun's G-Field on Earth.
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_brahma, delta_t)
 print(f" Mass / Radius of Satya-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
@@ -120,7 +120,7 @@ else:
 # Calculate the M/R ratio for Manu-loka and it's STAR:
 # Time Relation between Manu and Manushya 1 sec of Manu is 3067200 seconds for humans.
 delta_t_manu = 1 # in secs (This is similar to delta_t_prime)
-delta_t = time_dilated_earth * 3067200 # in secs
+delta_t = 3067200 # in secs. This is including the effect of Sun's G-Field on Earth.
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_manu, delta_t)
 print(f" Mass / Radius of Manu-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
@@ -144,7 +144,7 @@ else:
 # Calculate the M/R ratio for Deva-loka and it's STAR:
 # Time Relation between Deva and Manushya 1 sec of Deva is 360 seconds for humans.
 delta_t_deva = 1 # in secs (This is similar to delta_t_prime)
-delta_t = time_dilated_earth * 360 # in secs
+delta_t = 360 # in secs. This is including the effect of Sun's G-Field on Earth.
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_deva, delta_t)
 print(f" Mass / Radius of Deva-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
@@ -168,7 +168,7 @@ else:
 # Calculate the M/R ratio for Pitru-loka and it's STAR:
 # Time Relation between Pitru and Manushya 1 sec of Pitru is 30 seconds for humans.
 delta_t_pitru = 1 # in secs (This is similar to delta_t_prime)
-delta_t = time_dilated_earth * 30 # in secs
+delta_t = 30 # in secs. This is including the effect of Sun's G-Field on Earth.
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_pitru, delta_t)
 print(f" Mass / Radius of Pitru-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
