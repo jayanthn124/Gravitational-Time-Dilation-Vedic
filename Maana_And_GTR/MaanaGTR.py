@@ -97,13 +97,19 @@ print(f" Mass / Radius - Ratio for Sun's G-Field on Earth is = {mass_per_radius:
 # Time Relation between Brahma and Manushya 1 sec of Brahma is 3.1104e12 seconds for humans.
 delta_t_brahma = 1 # in secs (This is similar to delta_t_prime)
 delta_t = 3.1104e12 # in secs. This is including the effect of Sun's G-Field on Earth.
+T = 31104000 # in secs (acc to Brahma-Maana). 360 days of Brahma is Time period of the planet of Brahma.
+
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_brahma, delta_t)
 print(f" Mass / Radius of Satya-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
+# Orbital Distance assuming a circular orbit is calculated as:
+orbital_dist_brahma = math.sqrt((G * T * mass_per_radius) / (4 * math.pi * math.pi))
+print(f" Orbital Radius of Satya-loka is = {orbital_dist_brahma:.6f} = {orbital_dist_brahma:.2e} m")
 
 # Calculating the mass of the STAR that Satyaloka revolves using the parameter of its revolution period as 1 year.
-mass_of_star__of_satyaloka = mass_per_radius * One_AU
-print(f" Mass of the STAR that Satyaloka revolves around in One_AU (As Brahma's One Year is 360 days) is  = {mass_of_star__of_satyaloka:.12f} = {mass_of_star__of_satyaloka:.2e} kg")
+mass_of_star__of_satyaloka = mass_per_radius * orbital_dist_brahma
+print(f" Mass of the STAR that Satyaloka revolves around in Brahma's One Year i.e. 360 days is  = {mass_of_star__of_satyaloka:.12f} = {mass_of_star__of_satyaloka:.2e} kg")
+# Categorizing the Black-hole:
 if((mass_of_star__of_satyaloka > 1e9 * mass_of_sun) and (mass_of_star__of_satyaloka < 1e11  * mass_of_sun)):
     print(" STAR is a Ultramassive Blackhole")
 elif((mass_of_star__of_satyaloka > 1e6 * mass_of_sun) and (mass_of_star__of_satyaloka < 1e9  * mass_of_sun)):
@@ -121,13 +127,19 @@ else:
 # Time Relation between Manu and Manushya 1 sec of Manu is 3067200 seconds for humans.
 delta_t_manu = 1 # in secs (This is similar to delta_t_prime)
 delta_t = 3067200 # in secs. This is including the effect of Sun's G-Field on Earth.
+T = 31104000 # in secs (acc to Manu-Maana). 360 days of Manu is Time period of the planet of Manu.
+
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_manu, delta_t)
 print(f" Mass / Radius of Manu-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
+# Orbital Distance assuming a circular orbit is calculated as:
+orbital_dist_manu = math.sqrt((G * T * mass_per_radius) / (4 * math.pi * math.pi))
+print(f" Orbital Radius of Manu-loka is = {orbital_dist_manu:.6f} = {orbital_dist_manu:.2e} m")
 
 # Calculating the mass of the STAR that Manuloka revolves using the parameter of its revolution period as 1 year.
-mass_of_star__of_manuloka = mass_per_radius * One_AU
-print(f" Mass of the STAR that Manuloka revolves around in One_AU (As Manu's One Year is 360 days) is  = {mass_of_star__of_manuloka:.12f} = {mass_of_star__of_manuloka:.2e} kg")
+mass_of_star__of_manuloka = mass_per_radius * orbital_dist_manu
+print(f" Mass of the STAR that Manuloka revolves around in Manu's One Year i.e. 360 days is  = {mass_of_star__of_manuloka:.12f} = {mass_of_star__of_manuloka:.2e} kg")
+# Categorizing the Black-hole:
 if((mass_of_star__of_manuloka > 1e9 * mass_of_sun) and (mass_of_star__of_manuloka < 1e11  * mass_of_sun)):
     print(" STAR is a Ultramassive Blackhole")
 elif((mass_of_star__of_manuloka > 1e6 * mass_of_sun) and (mass_of_star__of_manuloka < 1e9  * mass_of_sun)):
@@ -145,13 +157,19 @@ else:
 # Time Relation between Deva and Manushya 1 sec of Deva is 360 seconds for humans.
 delta_t_deva = 1 # in secs (This is similar to delta_t_prime)
 delta_t = 360 # in secs. This is including the effect of Sun's G-Field on Earth.
+T = 31104000 # in secs (acc to Deva-Maana). 360 days of Deva is Time period of the planet of Deva.
+
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_deva, delta_t)
 print(f" Mass / Radius of Deva-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
+# Orbital Distance assuming a circular orbit is calculated as:
+orbital_dist_deva = math.sqrt((G * T * mass_per_radius) / (4 * math.pi * math.pi))
+print(f" Orbital Radius of Manu-loka is = {orbital_dist_deva:.6f} = {orbital_dist_deva:.2e} m")
 
 # Calculating the mass of the STAR that Satyaloka revolves using the parameter of its revolution period as 1 year.
-mass_of_star__of_devaloka = mass_per_radius * One_AU
+mass_of_star__of_devaloka = mass_per_radius * orbital_dist_deva
 print(f" Mass of the STAR that Devaloka revolves around in One_AU (As Deva's One Year is 360 days) is  = {mass_of_star__of_devaloka:.12f} = {mass_of_star__of_devaloka:.2e} kg")
+# Categorizing the Black-hole:
 if((mass_of_star__of_devaloka > 1e9 * mass_of_sun) and (mass_of_star__of_devaloka < 1e11  * mass_of_sun)):
     print(" STAR is a Ultramassive Blackhole")
 elif((mass_of_star__of_devaloka > 1e6 * mass_of_sun) and (mass_of_star__of_devaloka < 1e9  * mass_of_sun)):
@@ -169,13 +187,19 @@ else:
 # Time Relation between Pitru and Manushya 1 sec of Pitru is 30 seconds for humans.
 delta_t_pitru = 1 # in secs (This is similar to delta_t_prime)
 delta_t = 30 # in secs. This is including the effect of Sun's G-Field on Earth.
+T = 31104000 # in secs (acc to Pitru-Maana). 360 days of Pitru is Time period of the planet of Pitru.
+
 # M / R Ratio:
 mass_per_radius = Mass_Per_Radius_GTR(G, c, delta_t_pitru, delta_t)
 print(f" Mass / Radius of Pitru-loka is = {mass_per_radius:.6f} = {mass_per_radius:.2e} Kg/m")
+# Orbital Distance assuming a circular orbit is calculated as:
+orbital_dist_pitru = math.sqrt((G * T * mass_per_radius) / (4 * math.pi * math.pi))
+print(f" Orbital Radius of Manu-loka is = {orbital_dist_pitru:.6f} = {orbital_dist_pitru:.2e} m")
 
 # Calculating the mass of the STAR that Devaloka revolves using the parameter of its revolution period as 1 year.
-mass_of_star__of_pitruloka = mass_per_radius * One_AU
+mass_of_star__of_pitruloka = mass_per_radius * orbital_dist_pitru
 print(f" Mass of the STAR that Pitruloka revolves around in One_AU (As Pitru's One Year is 360 days) is  = {mass_of_star__of_pitruloka:.12f} = {mass_of_star__of_pitruloka:.2e} kg")
+# Categorizing the Black-hole:
 if((mass_of_star__of_pitruloka > 1e9 * mass_of_sun) and (mass_of_star__of_pitruloka < 1e11  * mass_of_sun)):
     print(" STAR is a Ultramassive Blackhole")
 elif((mass_of_star__of_pitruloka > 1e6 * mass_of_sun) and (mass_of_star__of_pitruloka < 1e9  * mass_of_sun)):
